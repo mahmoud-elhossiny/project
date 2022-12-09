@@ -1,0 +1,521 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  body {
+    overflow-x: hidden;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  
+  .header {
+    background-color: #263238;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+   
+    padding: 15px;
+    color: rgba(255,255,255,.55);
+    font-size: 19px;
+  }
+  .header .hed-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    display: none;
+  }
+  .menu i {
+    font-size: 20px;
+    color: rgb(136, 136, 136);
+  }
+  .menu span {
+    font-weight: bold;
+    color: rgb(136, 136, 136);
+  }
+  .header .hed-container .left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 90px;
+  }
+  .header .hed-container .left-nav .logo {
+    width: 200px;
+  }
+  .header .hed-container .left-nav .logo img {
+    width: 100%;
+  }
+ 
+  .header .hed-container .right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+ 
+  .header .hed-container a {
+    color: rgba(255,255,255,.55);
+   
+  }
+  
+  .header .hed-container a:hover {
+    color:  rgba(255, 255, 255, 0.849);
+    transition: .15s;
+    
+    
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition-duration: 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+    transition-property: color, background-color, border-color;
+  }
+  
+    
+  .header .hed-container .right-nav .get { border: 2px solid rgb(97, 162, 46);
+    background-color: rgb(97, 162, 46);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+
+  }
+  
+  .header .hed-container .right-nav .get:hover{
+    color: rgb(97, 162, 46) ;
+    background-color: white;
+  }
+
+   /* ##### Cards Styling ##### */
+.park-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 0px;
+    align-items: center;
+    background-color: #263238;
+    padding-top: 70px;
+    font-weight: bold;
+  
+    
+    
+  }
+  .park-cards .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+  .park-cards .heading p {
+    font-size: 22px;
+    color: rgb(136, 136, 136);
+    
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+    padding: 30px 5%;
+  }
+  .card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card .card-img-top {
+    width: 10px;
+  }
+  .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card .card-body .card-title {
+    font-size: 18px;
+  }
+  .card .card-body .card-text {
+    text-align: center;
+    color: rgb(108, 111, 115);
+  }
+
+
+
+
+  .park-cards .get{ border: 2px solid rgb(97, 162, 46);
+    background-color: rgb(97, 162, 46);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+
+  }
+  .park-cards .get:hover{
+    color: rgb(97, 162, 46) ;
+    background-color: white;
+  }
+  .park-cards .demo {border: 2px solid white;
+    background-color: #263238;
+    margin-left: 10px;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 20px 15px 20px;
+  }
+  .park-cards .demo:hover{
+    color: black;
+    background-color: white;
+  }
+
+
+   /* Partners Section Styling */
+.partners {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+    padding: 50px ;
+    background-color: #23292c;
+    
+  }
+  .partners .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+ 
+  .partners .heading h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+ 
+ .partners .row{
+    gap: 20px;
+    
+ }
+ /* .partners .container {
+    padding: 0 1%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .partners .container::-webkit-scrollbar {
+    display: none;
+  }
+  .partners .container .partner {
+    flex: 0 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-right: 40px;
+  }
+  .partners .container .partner img {
+    width: 100%;
+    height: 100%;
+  }
+  .partners .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .partners .next,
+  .partners .prev {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(136, 136, 136, 0.3);
+    background-color: rgb(255, 255, 255);
+  }
+  .dir.active {
+    background-color: rgba(136, 136, 136, 0.3);
+  }*/
+
+
+
+
+
+  /* ##### Do More Section Styling ##### */
+.doMore {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+    padding: 50px ;
+    background-color:  #263238;
+  }
+  .doMore .heading{
+    align-items: center;
+    font-weight: bolder;
+  }
+  .doMore .container {
+    display: flex;
+    justify-content: space-around;
+  
+    padding-top: 100px;
+  }
+  .doMore .container .text {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: center;
+  }
+  .doMore .container .text h4 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .doMore .container .text p {
+    font-size: 17px;
+    color: var(--six-color);
+  }
+  .doMore .container .img-box {
+    background-color:   #263238;
+    padding-left: 100px;
+    border-radius: 30px;
+    
+  }
+  .doMore .container .img-box img {
+    width: 100%;
+  }
+  
+  /* ##### Meet Styling ##### */
+  .meet {
+    padding: 30px 5%;
+    margin-top: 80px;
+  }
+  .meet .container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .meet .container .item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    display: none;
+  }
+  /* The active Class Adding by js */
+  .meet .container .item.active {
+    display: flex;
+    opacity: 1;
+  }
+  .meet .container .item .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: start;
+  }
+  .meet .container .item .text h4 {
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .meet .container .item .text p {
+    font-size: 35px;
+  }
+  .meet .container .item .text span {
+    font-weight: bold;
+  }
+  .meet .container .item .img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .meet .container .item img:last-of-type {
+    width: 200px;
+  }
+  .meet .container .direction {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: 0;
+  }
+  .meet .container .direction .prev,
+  .meet .container .direction .next {
+    background-color: var(--sec-color);
+    color: var(--thir-color);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid var(--sec-color);
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+
+    /* ##### Do Morrre Section Styling ##### */
+.doMorre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+    padding: 50px ;
+    background-color:  #263238;
+  }
+  .doMorre .heading{
+    align-items: center;
+    font-weight: bolder;
+  }
+  .doMorre .container {
+    display: flex;
+    justify-content: space-around;
+  
+    padding-top: 100px;
+  }
+  .doMorre .container .text {
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: center;
+    padding-left: 200px;
+  }
+  .doMorre .container .text h4 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .doMorre .container .text p {
+    font-size: 17px;
+    color: var(--six-color);
+  }
+  .doMorre .container .img-box {
+    background-color:   #263238;
+    padding-left: 50px;
+    border-radius: 30px;
+    
+  }
+  .doMorre .container .img-box img {
+    width: 100%;
+   height: 100%;
+
+  }
+  
+  
+  /* ##### Footer Styling ##### */
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 8%;
+    background-color: black;
+  }
+  .footer .globalLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  .footer .globalLinks:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(210, 213, 217, 0.1);
+  }
+  .footer .globalLinks a {
+    color: var(--thir-color);
+    position: relative;
+  }
+  .footer .globalLinks a:after {
+    content: "";
+    position: absolute;
+    top: 207%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+  
+    transition: var(--transition);
+  }
+  .footer .globalLinks a:hover:after {
+    background-color: var(--thir-color);
+    height: 2px;
+    top: 198%;
+  }
+  .footer .importantLilnks {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 25px;
+  }
+  .footer .importantLilnks::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    width: 120%;
+    height: 1px;
+    background-color: rgba(210, 213, 217, 0.1);
+  }
+  .footer .importantLilnks a {
+    color: var(--thir-color);
+    font-size: 15px;
+  }
+  .footer .importantLilnks span {
+    color: var(--thir-color);
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .footer .importantLilnks .st {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  .footer .importantLilnks .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer .importantLilnks .links .links-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer .importantLilnks .links .links-col a{
+    color:  rgb(97, 162, 46);
+  }
+  .footer .importantLilnks .links .links-col a:hover{
+    color: white;
+  }

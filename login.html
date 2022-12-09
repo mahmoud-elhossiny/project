@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Funnelll | Run Marketing Campaigns that Work - Login</title>
+  <link rel="icon" type="images/favicon.ico" sizes="32x32" href="images/faviconnn.ico" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
+
+<!--top nav--> 
+
+<body class="grey lighten-4">
+  <!--<nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">JW Online<span>Register</span></a>
+    </div>
+  </nav>-->
+  <!-- end of top nav -->
+
+
+  <!-- login page form -->
+  <div class="students container grey-text text-darken-1">
+    <form class="add-student container section" id="login-form">
+      <h6>User Login</h6>
+      <div class="divider"></div>
+      </br></br>
+      <div class="input-field">
+        <input placeholder="Enter Email Address" id="login-email" type="email" class="validate">
+        <label for="email"><i class="material-icons left">person_outline</i>Email Address</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Enter Password" id="login-password" type="password" class="validate" autocomplete="off">
+        <label for="pass"><i class="material-icons left">lock_outline</i>Password</label>
+      </div>
+      <a href="login.html" class="waves-effect">
+        <p>Forget Your Password?</p>
+      </a>
+      </br>
+      <a href="/" class="waves-effect sidenav-trigger" data-target="side-form">
+        <p>Register </p>
+      </a>
+      </br>
+      <div class="input-field center">
+        <button class="btn-small" type="submit" id="btnLogin">Login</button>
+      </div>
+    </form>
+  </div>
+  <!-- end of login page form -->
+
+  <!-- new user registration side nav -->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-student container section" id="signup-form">
+      <h6>New User Registration</h6>
+      <div class="divider"></div>
+
+      <div class="input-field">
+        <input placeholder="Enter Email Address" id="email" type="text" class="validate" autocomplete="off">
+        <label for="email">Email Address</label>
+      </div>
+
+      <div class="input-field">
+        <input placeholder="Enter Password" id="pass1" type="password" class="validate" autocomplete="off">
+        <label for="pass1">Create Password</label>
+      </div>
+
+
+      <div class="input-field center">
+        <button class="btn-small" type="submit">Create Account</button>
+      </div>
+    </form>
+  </div>
+  <!-- end of new user registration side nav -->
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+
+  <script>
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyARp6od4c2kpMCtxMTBesZGsoCHFPa0dOk",
+  authDomain: "funnelll-743ec.firebaseapp.com",
+  projectId: "funnelll-743ec",
+  storageBucket: "funnelll-743ec.appspot.com",
+  messagingSenderId: "578328800829",
+  appId: "1:578328800829:web:b7424c678505af37f50454"
+};
+
+
+  </script>
+
+
+<script src="js/auth.js"></script>
+<script src="js/ui.js"></script>
+
+
+
+</body>
+</html>
